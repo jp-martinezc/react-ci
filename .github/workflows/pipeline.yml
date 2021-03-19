@@ -4,6 +4,10 @@ on:
   push:
     branches:
       - master
+       - main
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize]
 
 jobs:
   simple_deployment_pipeline:
@@ -15,5 +19,10 @@ jobs:
           node-version: '12.x'
       - name: npm install 
         run: npm install  
-      - namelint: lint
-        run: npm run eslint
+      - name: lint
+        run: npm run ESSlint
+        - name: Build
+        run: npm run build
+
+
+     

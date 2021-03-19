@@ -10,8 +10,11 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - name: Say hello
+      run: |
+
+          echo "Hello ISIS3710"
       --date: displays date
         run: |
 
-          echo "Hello ISIS3710"
+          echo "date"
      
