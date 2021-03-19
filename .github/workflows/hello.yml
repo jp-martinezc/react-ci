@@ -12,3 +12,9 @@ jobs:
       - name: Say hello
         run: |
           echo "Hello ISIS3710"
+     datejob:
+    runs-on: ubuntu-18.04
+    steps:
+      --date: displays date
+        run: |
+          echo "Hello ISIS3710"      
